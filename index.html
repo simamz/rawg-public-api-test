@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAWG API - Game Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Game Explorer</h1>
+
+        <section>
+            <h2>Popular Games</h2>
+            <div id="popular-games" class="game-list"></div>
+        </section>
+
+        <section>
+            <h2>Search Game</h2>
+            <input type="text" id="search-input" placeholder="Enter game name...">
+            <button onclick="searchGame()">Search</button>
+            <div id="search-results" class="game-list"></div>
+        </section>
+
+        <section>
+            <h2>Game Details</h2>
+            <input type="number" id="game-id-input" placeholder="Enter game ID...">
+            <button onclick="getGameDetails()">Get Details</button>
+            <div id="game-details"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
